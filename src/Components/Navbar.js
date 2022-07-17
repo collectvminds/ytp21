@@ -65,7 +65,7 @@ export const YourApp = () => {
                 if (!mounted || !account || !chain) {
                   return (
                   
-                    <img src={wallet} className='laptop:w-6 desktop:w-6 mobile:w-5' onClick={openConnectModal} alt="wallet" title='wallet' />
+                    <img src={wallet} className='laptop:w-6 desktop:w-6 mobile:w-3' onClick={openConnectModal} alt="wallet" title='wallet' />
                     
                   );
                 }
@@ -79,9 +79,9 @@ export const YourApp = () => {
                 }
   
                 return (
-                  <div style={{ display: 'flex', gap: 12 }}>
+                  <div style={{ display: 'flex', gap: 5 }}>
                     <button
-                      onClick={openChainModal}
+                      onClick={openAccountModal}
                       style={{ display: 'flex', alignItems: 'center' }}
                       type="button"
                     >
@@ -89,8 +89,8 @@ export const YourApp = () => {
                         <div
                           style={{
                             background: chain.iconBackground,
-                            width: 12,
-                            height: 12,
+                            width: 25,
+                            height: 25,
                             borderRadius: 999,
                             overflow: 'hidden',
                             marginRight: 4,
@@ -100,7 +100,7 @@ export const YourApp = () => {
                             <img
                               alt={chain.name ?? 'Chain icon'}
                               src={chain.iconUrl}
-                              style={{ width: 12, height: 12 }}
+                              style={{ width: 25, height: 25 }}
                             />
                           )}
                         </div>
@@ -108,12 +108,12 @@ export const YourApp = () => {
                       {/* {chain.name} */}
                     </button>
   
-                    <button onClick={openAccountModal} type="button">
-                      {account.displayName}
-                     {/*  {account.displayBalance
-                        ? ` (${account.displayBalance})`
-                     : ''} */}
-                    </button>
+                    <button onClick={openAccountModal} type="button" className="text-xs font-light">
+                      {/*{account.displayName}*/}
+                       {account.displayBalance
+                        ? `${account.displayBalance}`
+                     : ''} 
+                    </button> 
                   </div>
                 );
               })()}
@@ -129,7 +129,7 @@ const Navbar = () => {
     const [themeMenuOpened, setThemeMenuOpened] = useState(true);
     const themeMenu = useRef(null);
     const themeMenuButton = useRef(null);
-    const [stickyClass, setStickyClass] = useState('bg-transparent');
+    const [stickyClass, setStickyClass] = useState('bg-deepDarkBg');
 
     const { connectWallet } = useContext(ChainContext)
 
@@ -150,7 +150,7 @@ const Navbar = () => {
     const stickNavbar = () => {
         if (window !== undefined) {
             let windowHeight = window.scrollY;
-            windowHeight > 50 ? setStickyClass('sticky z-50 bg-deepDarkBg') : setStickyClass('bg-transparent');
+            windowHeight > 50 ? setStickyClass('sticky z-50 bg-deepDarkBg') : setStickyClass('bg-deepDarkBg');
         }
     };
 
@@ -192,8 +192,8 @@ const Navbar = () => {
 
                             <div className="laptop:inline-block desktop:inline-block mobile:hidden  ">
                                 <Link to={'/'} className="laptop:text-xl desktop:text-xl mobile:text-xs hover:bg-transparent">
-                                    <span><img className='laptop:w-9 desktop:w-9 mobile:w-7 mr-2 inline-block' src={logo} alt="logo" srcSet="" /></span> collective Minds
-                                </Link>
+                                    <span><img className='laptop:w-9 desktop:w-9 mobile:w-7 mr-2 inline-block' src={logo} alt="logo" srcSet="" /></span> 
+                                </Link> collective Minds
                             </div>
 
                             <div className=" laptop:hidden desktop:hidden mobile:inline-block  ">
@@ -249,17 +249,17 @@ const Navbar = () => {
                         </WagmiConfig>
                         {connectToWallet}
                         <a href='https://twitter.com/collectvminds' target="_blank" rel="noopener noreferrer">
-                            <img src={tw} className='visible laptop:w-6 desktop:w-6 mobile:w-5' alt="twitter" title='twitter' />
+                            <img src={tw} className='visible laptop:w-6 desktop:w-6 mobile:w-3' alt="twitter" title='twitter' />
                         </a>
                         <a href='https://opensea.io/collection/you-the-people' target="_blank" rel="noopener noreferrer">
 
-                            <img src={open} className='laptop:w-6 desktop:w-6 mobile:w-5' alt="opensea" title='opensea' />
+                            <img src={open} className='laptop:w-6 desktop:w-6 mobile:w-3' alt="opensea" title='opensea' />
                         </a>
                         <a href='https://www.instagram.com/collectvminds' target="_blank" rel="noopener noreferrer">
-                            <img src={ig} className='laptop:w-6 desktop:w-6 mobile:w-5' alt="instagram" title='instagram' />
+                            <img src={ig} className='laptop:w-6 desktop:w-6 mobile:w-3' alt="instagram" title='instagram' />
                         </a>
                         <a href='https://discord.gg/x6QFgg4tXB' target="_blank" rel="noopener noreferrer">
-                            <img src={dc} className='laptop:w-6 desktop:w-6 mobile:w-5' alt="discord" title='discord' />
+                            <img src={dc} className='laptop:w-6 desktop:w-6 mobile:w-3' alt="discord" title='discord' />
                         </a>
                     </div>
                 </div>

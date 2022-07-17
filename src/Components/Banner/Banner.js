@@ -22,7 +22,7 @@ const Banner = () => {
                         <h1 className="laptop:text-5xl desktop:text-5xl mobile:text-4xl font-bold">The world,
                             <br />imagined ​by AI.</h1>
 
-                        <p className="py-20 text-3xl font-light">
+                        <p className="py-20 laptop:text-3xl desktop:text-3xl mobile:text-xl font-light">
 
                             In December 2021 we asked an artificial intelligence to create art
                             representing its own thoughts about humanity.  <br /> <br /> <br />

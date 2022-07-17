@@ -22,25 +22,25 @@ const About = ({ overviewData }) => {
                     </p>
 
                     <div className="steps p-1 flex laptop:flex-row desktop:flex-row mobile:flex-col items-center justify-center">
-                        <div className="card card-1 bg-textGray">
+                        <div className="card card-1 bg-deepDarkBg border-0">
                             <div className="card-body text-center -space-y-10">
-                                <p className="text-deepDarkBg text-xs font-light">AI PROMPT</p>
+                                <p className="text-textGray text-xs font-normal">AI PROMPT</p>
                                 <p className="text-white text-4xl font-bold">AR</p>
-                                <p className='text-deepDarkBg'>The sentiment in the country in contemporary art style</p>
+                                <p className='text-textGray'>The sentiment in the country in contemporary art style</p>
                             </div>
                         </div>
-                        <div className="card card-2 bg-textGray laptop:mx-10 desktop:mx-10 mobile:my-10">
+                        <div className="card card-2 bg-deepDarkBg border-0 laptop:mx-10 desktop:mx-10 mobile:my-10">
                             <div className="card-body text-center -space-y-10">
-                                <p className="text-deepDarkBg text-xs font-light">AI PROMPT</p>
+                                <p className="text-textGray text-xs font-normal">AI PROMPT</p>
                                 <p className="text-white text-4xl font-bold ">3D</p>
-                                <p className='text-deepDarkBg'>The sentiment in the country in 3D digital art style</p>
+                                <p className='text-textGray'>The sentiment in the country in 3D digital art style</p>
                             </div>
                         </div>
-                        <div className="card card-3 bg-textGray">
+                        <div className="card card-3 bg-deepDarkBg border-0">
                             <div className="card-body text-center -space-y-10">
-                                <p className="text-deepDarkBg text-xs font-light">AI PROMPT</p>
+                                <p className="text-textGray text-xs font-normal">AI PROMPT</p>
                                 <p className="text-white text-4xl font-bold ">A3</p>
-                                <p className='text-deepDarkBg'>The sentiment in the country combining 3D and contemporary art styles</p>
+                                <p className='text-textGray'>The sentiment in the country combining 3D and contemporary art styles</p>
                             </div>
                         </div>
                     </div>

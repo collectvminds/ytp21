@@ -13,21 +13,21 @@ const Steps = () => {
     return (
         <>
             <div className=" howSteps px-10 py-5 mx-auto max-w-[960px] flex laptop:flex-row desktop:flex-row mobile:flex-col justify-evenly items-center" >
-                <div className="card card-1 bg-Dark" data-aos="fade-right">
+                <div className="card card-1 bg-deepDarkBg" data-aos="fade-right">
                     <div className="card-body text-center" d>
                         <img src={logo1} className="block mx-auto w-10" alt="logo" />
                         <h2 className="text-white text-xl font-bold ">Text prompt</h2>
                         <p className='text-textGray text-sm'>The sentence "The countryside in England in a sunny day with a castle in the background" was submitted to the AI.</p>
                     </div>
                 </div>
-                <div className="card card-2 bg-Dark laptop:mx-10 desktop:mx-10 mobile:my-10" data-aos="fade-right">
+                <div className="card card-2 bg-deepDarkBg laptop:mx-10 desktop:mx-10 mobile:my-10" data-aos="fade-right">
                     <div className="card-body text-center">
                         <img src={logo2} className="block mx-auto w-10" alt="logo" />
                         <h2 className="text-white text-xl font-bold ">Image seed</h2>
                         <p className='text-textGray text-sm'>The AI starts to work by generating a seed image that contains just noise - similar to what we see in our TV when it is receiving no signal.</p>
                     </div>
                 </div>
-                <div className="card card-3 bg-Dark" data-aos="fade-right">
+                <div className="card card-3 bg-deepDarkBg" data-aos="fade-right">
                     <div className="card-body text-center"  >
                         <img src={logo3} className="block mx-auto w-10" alt="logo" />
                         <h2 className="text-white text-xl font-bold ">Multiple Iterations</h2>
