@@ -8,7 +8,7 @@ import logo from '../../Assets/9.png'
 
 const Footer = () => {
     return (
-        <div className='bg-liteDarkBg py-14 min-h-[30vh]'>
+        <div className='bg-deepDarkBg py-14 min-h-[30vh]'>
             <div className="footerWrapper px-10 max-w-[1700px] mx-auto mobile:overflow-hidden ">
 
                 <footer className="footer footer-center p-10 bg-transparent " data-aos="fade-up">
@@ -23,7 +23,7 @@ const Footer = () => {
                         <a href='/#how' className="link link-hover hover:text-primaryBg">The AI in action</a>
                         <a href='/#plan' className="link link-hover hover:text-primaryBg">Roadmap</a>
                         <a href='/#donate' className="link link-hover hover:text-primaryBg">Get involved</a>
-                        <a href='/#team' className="link link-hover hover:text-primaryBg">The team</a>
+                        <a href='/team' className="link link-hover hover:text-primaryBg">The team</a>
 
                     </div>
                     <div>

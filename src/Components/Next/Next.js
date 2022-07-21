@@ -4,7 +4,7 @@ import './Next.css'
 
 const Next = () => {
     return (
-        <div className='nextBg bg-Dark pb-20 mx-auto' id='plan'>
+        <div className='nextBg bg-hero bg-cover pb-20 mx-auto' id='plan'>
             <div className="nextContent max-w-[960px] mx-auto">
                 <div className="title px-4 py-10 text-left mx-auto">
                     <p className='text-white text-4xl font-extrabold my-5 text-left'>

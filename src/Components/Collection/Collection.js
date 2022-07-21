@@ -59,7 +59,7 @@ const Collection = ({ collection, loading }) => {
             <div className="collection_video_titile bg-white text-white">
                 <Navbar />
 
-                <div className="collection min-h-[100vh] max-h-auto max-w-[3000px] mx-auto bg-Dark text-white">
+                <div className="collection min-h-[105vh] max-h-auto max-w-[3000px] mx-auto bg-hero-collection bg-cover text-white">
                     <div className="collection-content mobile:pt-40 tablet:pt-40 desktop:pt-60 mobile:px-10">
                         <div data-aos="fade-up">
                             <h1 className="laptop:text-5xl desktop:text-5xl mobile:text-4xl font-bold">You​, the people!</h1>

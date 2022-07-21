@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import About from '../Components/About/About';
@@ -9,7 +9,6 @@ import How from '../Components/How/How';
 import Loading from '../Components/Loading/Loading';
 import Next from '../Components/Next/Next';
 import Overview from '../Components/Overview/Overview';
-import Team from '../Components/Team/Team';
 
 const HomePage = () => {
     const [userLocation, setUserLocation] = useState({})
@@ -38,40 +37,22 @@ const HomePage = () => {
 
     }
 
-
     if (!overviewData.length) {
         return <Loading />
     }
 
-
-
-
-
     return (
         <div>
-
-
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Home | Collective Minds</title>
             </Helmet>
-
-
-
             <Banner />
-
             <Overview overviewData={overviewData} />
-
             <About overviewData={overviewData} />
-
-            <How />
+           <How />
             <Next />
             <Donation />
-            <Team />
-
-
-
-
         </div>
     );
 };

@@ -9,8 +9,7 @@ import HomePage from "./Pages/HomePage"
 
 
 const Collectionpage = lazy(() => import('./Pages/Collectionpage'))
-
-
+const TeamPage = lazy(() => import('./Pages/TeamPage'))
 
 function App() {
 
@@ -25,7 +24,6 @@ function App() {
 		);
 	}, [])
 
-
 	return (
 
 		<div className='mx-auto'>
@@ -39,6 +37,11 @@ function App() {
 					</Suspense>
 				} />
 
+				<Route path={'/team'} element={
+					<Suspense>	
+						<TeamPage />
+					</Suspense>
+				} />
 
 				<Route path={'/YTP21/assets/nft/:id'} element={<Art />} />
 				<Route path={'*'} element={<Four />} />

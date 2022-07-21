@@ -129,7 +129,7 @@ const Navbar = () => {
     const [themeMenuOpened, setThemeMenuOpened] = useState(true);
     const themeMenu = useRef(null);
     const themeMenuButton = useRef(null);
-    const [stickyClass, setStickyClass] = useState('bg-deepDarkBg');
+    const [stickyClass, setStickyClass] = useState('bg-transparent');
 
     const { connectWallet } = useContext(ChainContext)
 
@@ -150,7 +150,7 @@ const Navbar = () => {
     const stickNavbar = () => {
         if (window !== undefined) {
             let windowHeight = window.scrollY;
-            windowHeight > 50 ? setStickyClass('sticky z-50 bg-deepDarkBg') : setStickyClass('bg-deepDarkBg');
+            windowHeight > 10 ? setStickyClass('sticky z-10 bg-deepDarkBg') : setStickyClass('bg-transparent');
         }
     };
 
@@ -170,7 +170,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='navbarWrapper max-w-[1700px] mx-auto '>
+        <div className='navbarWrapper max-w-[1600px] mx-auto '>
             <div className={`navbar ${stickyClass} laptop:pl-30 mx-auto mobile:p-1 desktop:px-40 `}>
                 <div className="navbar-start">
                     <div ref={themeMenu} className="dropdown">
@@ -232,7 +232,7 @@ const Navbar = () => {
                                 <a href='/#donate' className="link link-hover hover:text-white">Get involved</a></li>
 
                             <li className='hover:text-primaryBg'>
-                            <a href='/#team' className="link link-hover hover:text-white">The team</a></li>                                
+                            <a href='/team' className="link link-hover hover:text-white">The team</a></li>                                
                         </ul>
                     </div>
                 </div>

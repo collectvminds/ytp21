@@ -15,12 +15,9 @@ module.exports = {
       lightGray: "#4c5a6c",
       Mid: "#4D5A6B",
       Dark: "#292D33"
-
-
-
-
     },
-    extend: {},
+
+    extend: {}, 
     screens: {
       'mobile': '319px',
       // => @media (min-width: 640px) { ... }
@@ -41,39 +38,3 @@ module.exports = {
   plugins: [require("daisyui")],
 }
 
-
-// Heading1 light
-// font: roboto
-// size: 50
-// style: bold
-// colour: FFFFFF
-
-// Heading1 dark
-// font: roboto
-// size: 50
-// style: bold
-// colour: 404040
-
-// Heading2 light
-// font: roboto
-// size: 30
-// style: regular
-// colour: FFFFFF
-
-// Heading2 dark
-// font: roboto
-// size: 30
-// style: regular
-// colour: 404040
-
-// Text light
-// font: roboto
-// size: 20
-// style: regular
-// colour: FFFFFF
-
-// Text dark
-// font: roboto
-// size: 20
-// style: regular
-// colour: 404040

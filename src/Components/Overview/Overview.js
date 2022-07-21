@@ -27,8 +27,8 @@ const Overview = ({ overviewData }) => {
                     <div className="aboutImg py-20 laptop:col-span-12 desktop:col-span-12 mobile:col-span-12" data-aos="fade-left">
 
 
-                        <div className="country flex flex-row items-center mb-0">
-                            <img src={overviewData[0]?.flag} className="w-20 rounded-md ml-10 mr-5" alt="countryFlag" />
+                        <div className="country flex laptop:flex-row desktop:flex-row mobile:flex-col items-center mobile:items-start mb-0">
+                            <img src={overviewData[0]?.flag} className="w-20 rounded-md desktop:ml-10 tablet:ml-10 mr-5 mobile:ml-1 desktop:mb-0 tablet:mb-0 mobile:mb-5" alt="countryFlag" />
                             <p className='text-Dark text-xl font-normal'>{overviewData[0]?.description}</p>
 
                         </div>
@@ -50,11 +50,9 @@ const Overview = ({ overviewData }) => {
                                 })
                             }
 
-
-
                         </div>
                         <br/> <br/>
-                        <button type="button" className="w-70 rounded-lg block laptop:ml-auto desktop:ml-auto mobile:mx-auto text-Dark bg-transparent focus:outline-none text-lg font-bold px-5 py-2.5 border-2 border-Dark text-center mr-2 mb-2 transition-all ease-in-out duration-300 hover:bg-Dark hover:text-white" onClick={() => navigate('/collections')}>Explore collection</button>
+                        <button type="button" className="w-70 rounded-lg block laptop:ml-auto desktop:ml-auto mobile:mx-auto text-Dark focus:outline-none text-lg font-bold px-5 py-2.5 border-2 border-Dark text-center mr-2 mb-2 transition-all ease-in-out duration-300 hover:bg-Dark hover:text-white" onClick={() => navigate('/collections')}>Explore collection</button>
 
 
                     </div>

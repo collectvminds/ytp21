@@ -10,3 +10,5 @@
     min-width: 200px;
     border: 2px solid white;
 }
+
+.bg-hero-about { background-image: url(../../Assets/blob1.svg) }

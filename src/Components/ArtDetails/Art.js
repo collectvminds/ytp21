@@ -98,11 +98,11 @@ const Art = () => {
                     </div>
 
 
-                    <div className="artPrice flex flex-row justify-between items-center " >
-                    {notSold ? <a className="w-15 text-Dark bg-transparent rounded-lg focus:outline-none text-sm font-bold px-5 py-2.5 border-2 border-Dark text-center mr-2 mb-2 transition-all ease-in-out duration-300 hover:bg-Dark hover:text-textGray"
+                    <div className="artPrice flex flex-row justify-between items-center text-Dark" >
+                    {notSold ? <a className="w-15 rounded-lg focus:outline-none text-sm font-bold px-5 py-2.5 border-2 border-Dark text-center mr-2 mb-2 transition-all ease-in-out duration-300 hover:bg-Dark hover:text-white"
                         href={link} target="_blank" rel="noopener noreferrer">
                         View on OpenSea
-                        </a> : <button type="button" className="w-15 text-Dark bg-white rounded-lg focus:outline-none text-sm font-bold px-5 py-2.5 border-2 border-Dark text-center mr-2 mb-2 transition-all ease-in-out duration-300 hover:bg-Dark hover:text-textGray"
+                        </a> : <button type="button" className="w-15 rounded-lg focus:outline-none text-sm font-bold px-5 py-2.5 border-2 border-Dark text-center mr-2 mb-2 transition-all ease-in-out duration-300 hover:bg-Dark hover:text-white"
                             onClick={() => handleBuy()}
                         >
                             Buy
